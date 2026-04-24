@@ -17,18 +17,21 @@ A lightweight, robust FastAPI application designed to manage patient records. Th
 ## 📁 Project Structure
 ```text
 patient_api/
-├── main.py          # Route handlers and FastAPI instance
-├── schemas.py       # Pydantic data models & logic
-├── database.py      # JSON file I/O operations
-└── patients.json    # Local data storage (Database)
-
+├──app/
+├   ├── main.py          # Route handlers and FastAPI instance
+├   ├── schemas.py       # Pydantic data models & logic
+├   ├── database.py      # JSON file I/O operations
+├   └── patients.json    # Local data storage (Database)
+├── Dockerfile
+├── README.md
+├── requirements.txt
 
 ## 🛠️ Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/patient-api.git](https://github.com/your-username/patient-api.git)
-   cd patient-api
+   git clone https://github.com/pratham636/Patient-Management-System-API.git
+   cd Patient-Management-System-API
 
 
 2. **Set up a virtual environment:**
@@ -45,7 +48,7 @@ patient_api/
 
 4. **Run the application:**
    ```bash
-   uvicorn main:app --reload
+   uvicorn app.main:app --reload
 
 5. **Access the API:**
    * **Interactive Swagger Docs:** http://127.0.0.1:8000/docs
