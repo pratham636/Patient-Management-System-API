@@ -25,14 +25,14 @@ patient_api/
 ├── Dockerfile
 ├── README.md
 ├── requirements.txt
-
+```
 ## 🛠️ Installation
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/pratham636/Patient-Management-System-API.git
    cd Patient-Management-System-API
-
+   ```
 
 2. **Set up a virtual environment:**
    ```bash
@@ -41,15 +41,15 @@ patient_api/
    venv\Scripts\activate
    # Mac/Linux:
    source venv/bin/activate
-
+   ```
 3. **Install dependencies:**
    ```bash
    pip install fastapi uvicorn pydantic
-
+   ```
 4. **Run the application:**
    ```bash
    uvicorn app.main:app --reload
-
+   ```
 5. **Access the API:**
    * **Interactive Swagger Docs:** http://127.0.0.1:8000/docs
    * **Alternative ReDoc:** http://127.0.0.1:8000/redoc
